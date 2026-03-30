@@ -1,5 +1,7 @@
 # potential.py
 
+![2D reaction potential around a gramicidin channel in a POPC membrane](assets/ga-reaction-pot.png)
+
 A Python reimplementation of GROMACS `gmx potential` using MDAnalysis. Calculates the electrostatic potential along a simulation box axis by dividing the system into slices, computing the charge density, and solving the Poisson equation.
 
 By default, uses **Fourier-space integration**, which naturally respects periodic boundary conditions and eliminates the slice-count-dependent artifacts that plague the classical real-space double integration used by `gmx potential`.
